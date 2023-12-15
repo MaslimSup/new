@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search Interface</title>
+</head>
+<body>
+
+    <h1>Google Search Interface</h1>
+
+    <!-- Форма для обычного поиска Google -->
+    <form action="https://www.google.com/search" method="GET" target="_blank">
+        <label for="search">Поиск Google:</label>
+        <input type="text" id="search" name="q" required>
+        <button type="submit">Поиск</button>
+    </form>
+
+    <!-- Форма для поиска картинок Google -->
+    <form action="https://www.google.com/search" method="GET" target="_blank">
+        <label for="imageSearch">Поиск картинок Google:</label>
+        <input type="text" id="imageSearch" name="tbm" value="isch" hidden>
+        <input type="text" id="imageQuery" name="q" required>
+        <button type="submit">Поиск картинок</button>
+    </form>
+
+    <!-- Форма для расширенного поиска Google -->
+    <form action="https://www.google.com/search" method="GET" target="_blank">
+        <label for="advancedSearch">Расширенный поиск Google:</label>
+        <input type="text" id="advancedSearch" name="q" required>
+        <label for="site">Сайт:</label>
+        <input type="text" id="site" name="as_sitesearch">
+        <button type="submit">Расширенный поиск</button>
+    </form>
+
+</body>
+</html>
